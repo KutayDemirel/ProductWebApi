@@ -39,7 +39,7 @@ namespace ProductWebApi.Controllers
 
         }
         //GET: api/v1/Products/Search
-        [HttpGet("Search")]
+         [HttpGet("Search")]
         public async Task<ActionResult<IEnumerable<ProductsViewModel>>> Search([FromQuery] SearchQuery search)
         {
             var result = await _repository.Search(search);
